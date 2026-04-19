@@ -123,6 +123,29 @@
                 border-color: var(--navy);
             }
 
+            .card ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .card ul li {
+                position: relative;
+                padding-left: 1.25em;
+                font-size: 0.95rem;
+                line-height: 1.65;
+                color: #444;
+                margin-bottom: 6px;
+            }
+
+            .card ul li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: var(--accent);
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
+
             .video-wrapper {
                 position: relative;
                 padding-bottom: 56.25%;
