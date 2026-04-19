@@ -1,37 +1,223 @@
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Collin Ogren | CS-499 ePortfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --navy: #243151;
+                --cream: #f5f5dd;
+                --accent: #c8a96e;
+                --text: #2a2a2a;
+                --card-bg: #ffffff;
+                --border: #ddddc8;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: var(--cream);
+                font-family: "IBM Plex Sans", sans-serif;
+                color: var(--text);
+            }
+
+            header {
+                background-color: var(--navy);
+                padding: 32px 40px;
+                border-bottom: 3px solid var(--accent);
+            }
+
+            header h1 {
+                color: var(--cream);
+                font-family: "IBM Plex Mono", monospace;
+                font-size: clamp(1rem, 2.5vw, 1.4rem);
+                font-weight: 600;
+                letter-spacing: 0.02em;
+            }
+
+            header h1 span {
+                color: var(--accent);
+            }
+
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 40px 24px 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+            }
+
+            .card {
+                background: var(--card-bg);
+                border: 1px solid var(--border);
+                border-left: 4px solid var(--navy);
+                border-radius: 2px;
+                padding: 28px 32px;
+            }
+
+            .card h2 {
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--navy);
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .card h2::before {
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background: var(--accent);
+                border-radius: 50%;
+                flex-shrink: 0;
+            }
+
+            .card p {
+                font-size: 0.95rem;
+                line-height: 1.65;
+                color: #444;
+                margin-bottom: 16px;
+            }
+
+            .card h4 {
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 0.78rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--navy);
+                margin: 14px 0 5px;
+            }
+
+            .card a {
+                display: inline-block;
+                font-family: "IBM Plex Mono", monospace;
+                font-size: 0.8rem;
+                color: var(--navy);
+                text-decoration: none;
+                border-bottom: 1px solid var(--accent);
+                padding-bottom: 1px;
+                word-break: break-all;
+                transition:
+                    color 0.15s,
+                    border-color 0.15s;
+            }
+
+            .card a:hover {
+                color: var(--accent);
+                border-color: var(--navy);
+            }
+
+            .video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                margin-top: 8px;
+                border: 1px solid var(--border);
+            }
+
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            footer {
+                background-color: var(--navy);
+                padding: 28px 40px;
+                border-top: 3px solid var(--accent);
+            }
+        </style>
     </head>
-    <body style="margin: 0; background-color: #F5F5DD">
-        <div style="display: flex; align-items: center; background-color: #243151; height: 100px; width: 100%;">
-            <h1 style="color: #F5F5DD; margin-left: 25px">Collin Ogren's ePortfolio for SNHU CS-499</h1>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 10px; margin: 10px 25px 25px 10px">
-            <div>
+    <body>
+        <header>
+            <h1>Collin Ogren's ePortfolio &mdash; <span>SNHU CS-499</span></h1>
+        </header>
+
+        <main>
+            <div class="card">
                 <h2>Code Review</h2>
-                <iframe width="1376" height="774" src="https://www.youtube.com/embed/q_zmgoi9F_E" title="CS 499 Collin Ogren Code Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/q_zmgoi9F_E"
+                        title="CS 499 Collin Ogren Code Review"
+                        allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                        "
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
             </div>
-            <div>
+
+            <div class="card">
                 <h2>Inventory Tracker</h2>
-                <p>This Android application demostrates thoughtful UI design, sound software engineering and design principles, and robust database technology.</p>
+                <p>
+                    This Android application demonstrates thoughtful UI design,
+                    sound software engineering and design principles, and robust
+                    database technology.
+                </p>
                 <h4>Android Frontend App</h4>
-                <a href="https://github.com/collinogren/Inventory-Tracker">https://github.com/collinogren/CS-360-Inventory-Tracker</a>
+                <a href="https://github.com/collinogren/Inventory-Tracker"
+                    >https://github.com/collinogren/CS-360-Inventory-Tracker</a
+                >
                 <h4>API for Snowflake</h4>
-                <a href="https://github.com/collinogren/Inventory-Tracker-Snowflake-API">https://github.com/collinogren/Inventory-Tracker-Snowflake-API</a>
+                <a
+                    href="https://github.com/collinogren/Inventory-Tracker-Snowflake-API"
+                    >https://github.com/collinogren/Inventory-Tracker-Snowflake-API</a
+                >
                 <h4>Before Enhancements</h4>
-                <a href="https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf">https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf</a>
-                <p>The API is a new program and did not exist prior</p>
+                <a
+                    href="https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf"
+                    >https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf</a
+                >
+                <p style="margin-top: 12px; margin-bottom: 0">
+                    The API is a new program and did not exist prior.
+                </p>
             </div>
-            <div>
+
+            <div class="card">
                 <h2>Auto Team Totals</h2>
-                <p>Created for use at U.S. Figure Skating competitions, this software provides value in immense time savings and strong algorithmic precision and efficiency.</p>
-                <a href="https://github.com/collinogren/AutoTeamTotals">https://github.com/collinogren/AutoTeamTotals</a>
+                <p>
+                    Created for use at U.S. Figure Skating competitions, this
+                    software provides value in immense time savings and strong
+                    algorithmic precision and efficiency.
+                </p>
+                <a href="https://github.com/collinogren/AutoTeamTotals"
+                    >https://github.com/collinogren/AutoTeamTotals</a
+                >
                 <h4>Before Enhancements</h4>
-                <a href="https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47">https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47</a>
+                <a
+                    href="https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47"
+                    >https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47</a
+                >
             </div>
-        </div>
-        <div style="display: flex; align-items: center; background-color: #243151; height: 100px; width: 100%;"/>
+        </main>
+
+        <footer></footer>
     </body>
 </html>
