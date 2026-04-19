@@ -177,24 +177,84 @@
             <div class="card">
                 <h2>Inventory Tracker</h2>
                 <p>
-                    This Android application demonstrates thoughtful UI design,
-                    sound software engineering and design principles, and robust
-                    database technology.
+                    This full-stack Android application was created for a mobile
+                    programming class and demonstrates thoughtful UI design,
+                    sound software engineering and design principles, REST API
+                    design and implementation, and usage of robust database
+                    technology that powers massive, real-world enterprise
+                    software.
                 </p>
                 <h4>Android Frontend App</h4>
-                <a href="https://github.com/collinogren/Inventory-Tracker"
-                    >https://github.com/collinogren/CS-360-Inventory-Tracker</a
-                >
+                <p>
+                    The frontend Android app showcases software engineering and
+                    design principles such as separation of concerns with its
+                    model-view-controller architecture. It also demonstrates
+                    unit testing, multithreading, and connectivity to a REST API
+                    backend.
+                </p>
+                <a href="https://github.com/collinogren/Inventory-Tracker">
+                    https://github.com/collinogren/CS-360-Inventory-Tracker
+                </a>
                 <h4>API for Snowflake</h4>
+                <p>
+                    The REST API backend, hosted with AWS Lambda, provides a
+                    robust platform for transferring data to and from the
+                    Snowflake database securely. The API sends and recieves data
+                    primarily using the HTTP body to facilitate safe transport
+                    of sensitive data. In addition, the backend hashes passwords
+                    using SHA-256 and the database only stores the hashed
+                    passwords to protect users in the event of a data breach and
+                    to ensure that even administrators cannot view users'
+                    passwords.
+                </p>
                 <a
                     href="https://github.com/collinogren/Inventory-Tracker-Snowflake-API"
-                    >https://github.com/collinogren/Inventory-Tracker-Snowflake-API</a
                 >
+                    https://github.com/collinogren/Inventory-Tracker-Snowflake-API
+                </a>
+                <h4>Enhancements Made</h4>
+                <ul>
+                    <li>
+                        Added a flexible and remote Snowflake database so that
+                        users can access their accounts from any device
+                    </li>
+                    <li>
+                        Added an AWS Lambda backend to facilitate secure
+                        communication
+                    </li>
+                    <li>
+                        Added unit tests to build confidence in existing systems
+                    </li>
+                    <li>
+                        Improve searching algorithm by using the Jaro Winkler
+                        similarity algorithm provided by Snowflake
+                    </li>
+                    <li>
+                        Utilize a service structure to separate the concerns of
+                        communicating with the API from the controllers
+                    </li>
+                    <li>
+                        Move add and subtract item quantity buttons into the
+                        edit activity due to the new concerns of latency
+                    </li>
+                </ul>
+                <h4>Future Considerations</h4>
+                <ul>
+                    <li>
+                        Use AWS Cognito for more secure authentication of users
+                        and continued authentication during sessions
+                    </li>
+                    <li>
+                        If the service goes public, analyze Snowflake usage to
+                        optimize warehouse size and session length
+                    </li>
+                </ul>
                 <h4>Before Enhancements</h4>
                 <a
                     href="https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf"
-                    >https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf</a
                 >
+                    https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf
+                </a>
                 <p style="margin-top: 12px; margin-bottom: 0">
                     The API is a new program and did not exist prior.
                 </p>
@@ -207,9 +267,31 @@
                     software provides value in immense time savings and strong
                     algorithmic precision and efficiency.
                 </p>
+                <p>
+                    The project demonstrates the implementation of robust and
+                    effective data structures and algorithms that solve
+                    real-world problems. The use of the Rust programming
+                    language demonstrates a commitment to software safety and
+                    security.
+                </p>
                 <a href="https://github.com/collinogren/AutoTeamTotals"
                     >https://github.com/collinogren/AutoTeamTotals</a
                 >
+                <h4>Future Considerations</h4>
+                <ul>
+                    <li>
+                        Continue code cleanup efforts: the GUI is a monolith
+                        that should be split up
+                    </li>
+                    <li>
+                        Implement unit testing to increase confidence in this
+                        production application
+                    </li>
+                    <li>
+                        Add the ability to get results from the internet in
+                        addition to locally
+                    </li>
+                </ul>
                 <h4>Before Enhancements</h4>
                 <a
                     href="https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47"
