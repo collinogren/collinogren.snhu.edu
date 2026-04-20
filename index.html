@@ -1,215 +1,251 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Collin Ogren | CS-499 ePortfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collin Ogren | CS-499 ePortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
-        />
-        <style>
-            :root {
-                --navy: #243151;
-                --cream: #f5f5dd;
-                --accent: #c8a96e;
-                --text: #2a2a2a;
-                --card-bg: #ffffff;
-                --border: #ddddc8;
-            }
+    />
+    <style>
+        :root {
+            --navy: #243151;
+            --cream: #f5f5dd;
+            --accent: #c8a96e;
+            --text: #2a2a2a;
+            --card-bg: #ffffff;
+            --border: #ddddc8;
+        }
 
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-            body {
-                background-color: var(--cream);
-                font-family: "IBM Plex Sans", sans-serif;
-                color: var(--text);
-            }
+        body {
+            background-color: var(--cream);
+            font-family: "IBM Plex Sans", sans-serif;
+            color: var(--text);
+        }
 
-            header {
-                background-color: var(--navy);
-                padding: 32px 40px;
-                border-bottom: 3px solid var(--accent);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
- 
-            header h1 {
-                color: var(--cream);
-                font-family: "IBM Plex Mono", monospace;
-                font-size: clamp(1rem, 2.5vw, 1.4rem);
-                font-weight: 600;
-                letter-spacing: 0.02em;
-            }
- 
-            header h1 span {
-                color: var(--accent);
-            }
+        header {
+            background-color: var(--navy);
+            padding: 32px 40px;
+            border-bottom: 3px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-            main {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 40px 24px 60px;
-                display: flex;
-                flex-direction: column;
-                gap: 28px;
-            }
+        header h1 {
+            color: var(--cream);
+            font-family: "IBM Plex Mono", monospace;
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
 
-            .card {
-                background: var(--card-bg);
-                border: 1px solid var(--border);
-                border-left: 4px solid var(--navy);
-                border-radius: 2px;
-                padding: 28px 32px;
-            }
+        header h1 span {
+            color: var(--accent);
+        }
 
-            .card h2 {
-                font-family: "IBM Plex Mono", monospace;
-                font-size: 1.1rem;
-                font-weight: 600;
-                color: var(--navy);
-                margin-bottom: 16px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
 
-            .card h2::before {
-                content: "";
-                display: inline-block;
-                width: 8px;
-                height: 8px;
-                background: var(--accent);
-                border-radius: 50%;
-                flex-shrink: 0;
-            }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--navy);
+            border-radius: 2px;
+            padding: 28px 32px;
+        }
 
-            .card p {
-                font-size: 0.95rem;
-                line-height: 1.65;
-                color: #444;
-                margin-bottom: 16px;
-            }
+        .card h2 {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-            .card h4 {
-                font-family: "IBM Plex Mono", monospace;
-                font-size: 0.78rem;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.08em;
-                color: var(--navy);
-                margin: 14px 0 5px;
-            }
+        .card h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
 
-            .card a {
-                display: inline-block;
-                font-family: "IBM Plex Mono", monospace;
-                font-size: 0.8rem;
-                color: var(--navy);
-                text-decoration: none;
-                border-bottom: 1px solid var(--accent);
-                padding-bottom: 1px;
-                word-break: break-all;
-                transition:
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .card h4 {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--navy);
+            margin: 14px 0 5px;
+        }
+
+        .card a {
+            display: inline-block;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.8rem;
+            color: var(--navy);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 1px;
+            word-break: break-all;
+            transition:
                     color 0.15s,
                     border-color 0.15s;
-            }
+        }
 
-            .card a:hover {
-                color: var(--accent);
-                border-color: var(--navy);
-            }
+        .card a:hover {
+            color: var(--accent);
+            border-color: var(--navy);
+        }
 
-            .card ul {
-                list-style: none;
-                padding-left: 0;
-            }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-            .card ul li {
-                position: relative;
-                padding-left: 1.25em;
-                font-size: 0.95rem;
-                line-height: 1.65;
-                color: #444;
-                margin-bottom: 6px;
-            }
+        .card ul li {
+            position: relative;
+            padding-left: 1.25em;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: #444;
+            margin-bottom: 6px;
+        }
 
-            .card ul li::before {
-                content: "•";
-                position: absolute;
-                left: 0;
-                color: var(--accent);
-                font-size: 1.1em;
-                line-height: 1.5;
-            }
+        .card ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
 
-            .video-wrapper {
-                position: relative;
-                padding-bottom: 56.25%;
-                height: 0;
-                margin-top: 8px;
-                border: 1px solid var(--border);
-            }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-top: 8px;
+            border: 1px solid var(--border);
+        }
 
-            .video-wrapper iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border: 0;
-            }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
-            header nav {
-                display: flex;
-                align-items: center;
-                gap: 24px;
-            }
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
 
-            header nav a {
-                font-family: "IBM Plex Mono", monospace;
-                font-size: 0.8rem;
-                color: var(--cream);
-                text-decoration: none;
-                border-bottom: 1px solid var(--accent);
-                padding-bottom: 1px;
-                transition: color 0.15s;
-            }
+        header nav a {
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 0.8rem;
+            color: var(--cream);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 1px;
+            transition: color 0.15s;
+        }
 
-            header nav a:hover {
-                color: var(--accent);
-            }
+        header nav a:hover {
+            color: var(--accent);
+        }
 
-            footer {
-                background-color: var(--navy);
-                padding: 28px 40px;
-                border-top: 3px solid var(--accent);
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Collin Ogren's ePortfolio</h1>
-            <nav>
-                <a href="https://www.linkedin.com/in/collinogren/">LinkedIn</a>
-                <a href="https://github.com/collinogren">GitHub</a>
-                <h1><span>SNHU CS-499</span></h1>
-            </nav>
-        </header>
-        <main>
-            <div class="card">
-                <h2>Code Review</h2>
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/q_zmgoi9F_E"
-                        title="CS 499 Collin Ogren Code Review"
-                        allow="
+        footer {
+            background-color: var(--navy);
+            padding: 28px 40px;
+            border-top: 3px solid var(--accent);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Collin Ogren | ePortfolio</h1>
+    <nav>
+        <a href="https://www.linkedin.com/in/collinogren/">LinkedIn</a>
+        <a href="https://github.com/collinogren">GitHub</a>
+        <h1><span>SNHU CS-499</span></h1>
+    </nav>
+</header>
+<main>
+    <div class="card">
+        <h2>Professional Self Assessment</h2>
+        <p>My name is Collin Ogren. I am a full-stack software engineer for Quest Analytics.</p>
+        <p>
+            Through the years, outside of my professional work, I have contributed as a programmer and software
+            tester for U.S. Figure Skating, shipping code that brings value to the federation.
+            The SNHU computer science course has helped to elevate my understanding of integral computer science
+            concepts such as code quality and safety, software engineering and design, databases, and data structures
+            and algorithms. The lessons learned from the courses get applied and reinforced daily in my professional life.
+        </p>
+        <p>
+            The capstone served as an opportunity to refine existing projects in a thoughtful manner
+            and learn concepts that can be transferred out of college. The choice add a Snowflake
+            database to an application was inspired by a recent push in my software engineering
+            position to embrace Snowflake. I chose to enhance the data structures and algorithms
+            in a U.S. Figure Skating application as part of an effort to continue getting it ready
+            for an official launch. In this way, this course not only helped to cement existing concepts,
+            it also provides real-world value in the form of a learning opportunity for Snowflake
+            and a chance to reduce technical debt in U.S. Figure Skating software.
+        </p>
+        <p>
+            This course has brought into focus skills such as secure software design, safe programming techniques,
+            peer review, communication with key stakeholders, and diverse knowledge of programming languages and
+            paradigms to actualize complex requirements into deliverable solutions that can bring value to
+            organizations and individuals.
+        </p>
+        <p>
+            A primary goal of this course is to enhance software artifacts in the areas of software engineering and design,
+            data structures and algorithms, and databases. The first artifact is an inventory tracking application which
+            was enhanced in various ways to improve its design and software engineering principles. Part of these enhancements
+            took place during the larger second enhancement that was made: the implementation of a Snowflake database with
+            a new backend API hosted with AWS.<br>
+            The U.S. Figure Skating application, Auto Team Totals, was the target of enhancements for data structures and
+            algorithms. Improvements were made to algorithmic efficiency and data structure robustness.
+        </p>
+    </div>
+    <div class="card">
+        <h2>Code Review</h2>
+        <div class="video-wrapper">
+            <iframe
+                    src="https://www.youtube.com/embed/q_zmgoi9F_E"
+                    title="CS 499 Collin Ogren Code Review"
+                    allow="
                             accelerometer;
                             autoplay;
                             clipboard-write;
@@ -218,148 +254,193 @@
                             picture-in-picture;
                             web-share;
                         "
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-            </div>
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+            ></iframe>
+        </div>
+    </div>
 
-            <div class="card">
-                <h2>Inventory Tracker</h2>
-                <p>
-                    This full-stack Android application was created for a mobile
-                    programming class and demonstrates thoughtful UI design,
-                    sound software engineering and design principles, REST API
-                    design and implementation, and usage of robust database
-                    technology that powers massive, real-world enterprise
-                    software.
-                </p>
-                <h4>Android Frontend App</h4>
-                <p>
-                    The frontend Android app showcases software engineering and
-                    design principles such as separation of concerns with its
-                    model-view-controller architecture. It also demonstrates
-                    unit testing, multithreading, and connectivity to a REST API
-                    backend.
-                </p>
-                <a href="https://github.com/collinogren/Inventory-Tracker">
-                    https://github.com/collinogren/CS-360-Inventory-Tracker
-                </a>
-                <h4>API for Snowflake</h4>
-                <p>
-                    The REST API backend, hosted with AWS Lambda, provides a
-                    robust platform for transferring data to and from the
-                    Snowflake database securely. The API sends and receives data
-                    primarily using the HTTP body to facilitate safe transport
-                    of sensitive data. In addition, the backend hashes passwords
-                    using SHA-256 and the database only stores the hashed
-                    passwords to protect users in the event of a data breach and
-                    to ensure that even administrators cannot view users'
-                    passwords.
-                </p>
-                <a
-                    href="https://github.com/collinogren/Inventory-Tracker-Snowflake-API"
-                >
-                    https://github.com/collinogren/Inventory-Tracker-Snowflake-API
-                </a>
-                <h4>Enhancements Made</h4>
-                <ul>
-                    <li>
-                        Added a flexible and remote Snowflake database so that
-                        users can access their accounts from any device
-                    </li>
-                    <li>
-                        Added an AWS Lambda backend to facilitate secure
-                        communication
-                    </li>
-                    <li>
-                        Added unit tests to build confidence in existing systems
-                    </li>
-                    <li>
-                        Improved searching algorithm by using the Jaro Winkler
-                        similarity algorithm provided by Snowflake
-                    </li>
-                    <li>
-                        Utilize a service structure to separate the concerns of
-                        communicating with the API from the controllers
-                    </li>
-                    <li>
-                        Moved add and subtract item quantity buttons into the
-                        edit activity due to the new concerns of latency
-                    </li>
-                </ul>
-                <h4>Future Considerations</h4>
-                <ul>
-                    <li>
-                        Use AWS Cognito for more secure authentication of users
-                        and continued authentication during sessions
-                    </li>
-                    <li>
-                        If the service goes public, analyze Snowflake usage to
-                        optimize warehouse size and session length
-                    </li>
-                </ul>
-                <h4>Before Enhancements</h4>
-                <a
-                    href="https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf"
-                >
-                    https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf
-                </a>
-                <p style="margin-top: 12px; margin-bottom: 0">
-                    The API is a new program and did not exist prior.
-                </p>
-            </div>
+    <div class="card">
+        <h2>Inventory Tracker</h2>
+        <p>
+            This full-stack Android application was created for a mobile
+            programming class in late 2025. Its purpose is to track items
+            in an inventory in order to hypothetically bring administrative
+            value to an organization that needs to manage inventories.
+            The application was a strong choice for enhancement due to its
+            lack of cloud connectivity. In such an app, cloud services are
+            highly necessary in order to deliver value.
+        </p>
+        <p>
+            This software demonstrates thoughtful UI design,
+            sound software engineering and design principles, REST API
+            design and implementation, and usage of robust database
+            technology that powers massive, real-world enterprise
+            software.
+        </p>
+        <p>
+            Enhancing this project was a great exercise in full-stack development.
+            Lessons were learned across Snowflake, AWS, and Android ecosystems.
+            Software engineering and design best practices were followed throughout
+            and served as a practical exercise for producing well-architected code that
+            can be extended later.
+            General system knowledge of Snowflake and AWS has been improved significantly.
+            The greatest challenge posed was creating an entire backend API in approximately
+            two weeks.
+        </p>
+        <h4>Achieved course outcomes:</h4>
+        <ul>
+            <li>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science</li>
+            <li>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices</li>
+            <li>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals</li>
+            <li>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources</li>
+        </ul>
 
-            <div class="card">
-                <h2>Auto Team Totals</h2>
-                <p>
-                    Created for use at U.S. Figure Skating competitions, this
-                    software provides value in immense time savings for 
-                    calculating team points at U.S. Figure Skating competitions
-                    It demonstrates strong algorithmic precision and efficiency.
-                </p>
-                <p>
-                    The project demonstrates the implementation of robust and
-                    effective data structures and algorithms that solve
-                    real-world problems. The use of the Rust programming
-                    language demonstrates a commitment to software speed,
-                    safety, and security.
-                </p>
-                <a href="https://github.com/collinogren/AutoTeamTotals"
-                    >https://github.com/collinogren/AutoTeamTotals</a
-                >
-                <h4>Enhancements Made</h4>
-                <ul>
-                    <li>Improved algorithmic efficiency of core algorithms</li>
-                    <li>
-                        Added additional business logic as directed by U.S.
-                        Figure Skating leadership
-                    </li>
-                    <li>Improved code readability</li>
-                </ul>
-                <h4>Future Considerations</h4>
-                <ul>
-                    <li>
-                        Continue code cleanup efforts: the GUI is a monolith
-                        that should be split up
-                    </li>
-                    <li>
-                        Implement unit testing to increase confidence in this
-                        production application
-                    </li>
-                    <li>
-                        Add the ability to get results from the internet in
-                        addition to locally
-                    </li>
-                </ul>
-                <h4>Before Enhancements</h4>
-                <a
-                    href="https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47"
-                    >https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47</a
-                >
-            </div>
-        </main>
+        <h4>Android Frontend App</h4>
+        <p>
+            The frontend Android app showcases software engineering and
+            design principles such as separation of concerns with its
+            model-view-controller architecture. It also demonstrates
+            unit testing, multithreading, and connectivity to a REST API
+            backend.
+        </p>
+        <a href="https://github.com/collinogren/Inventory-Tracker">
+            https://github.com/collinogren/CS-360-Inventory-Tracker
+        </a>
+        <h4>API for Snowflake</h4>
+        <p>
+            The REST API backend, hosted with AWS Lambda, provides a
+            robust platform for transferring data to and from the
+            Snowflake database securely. The API sends and receives data
+            primarily using the HTTP body to facilitate safe transport
+            of sensitive data. In addition, the backend hashes passwords
+            using SHA-256 and the database only stores the hashed
+            passwords to protect users in the event of a data breach and
+            to ensure that even administrators cannot view users'
+            passwords.
+        </p>
+        <a
+                href="https://github.com/collinogren/Inventory-Tracker-Snowflake-API"
+        >
+            https://github.com/collinogren/Inventory-Tracker-Snowflake-API
+        </a>
+        <h4>Enhancements Made</h4>
+        <ul>
+            <li>
+                Added a flexible and remote Snowflake database so that
+                users can access their accounts from any device
+            </li>
+            <li>
+                Added an AWS Lambda backend to facilitate secure
+                communication
+            </li>
+            <li>
+                Added unit tests to build confidence in existing systems
+            </li>
+            <li>
+                Improved searching algorithm by using the Jaro Winkler
+                similarity algorithm provided by Snowflake
+            </li>
+            <li>
+                Utilize a service structure to separate the concerns of
+                communicating with the API from the controllers
+            </li>
+            <li>
+                Moved add and subtract item quantity buttons into the
+                edit activity due to the new concerns of latency
+            </li>
+        </ul>
+        <h4>Future Considerations</h4>
+        <ul>
+            <li>
+                Use AWS Cognito for more secure authentication of users
+                and continued authentication during sessions
+            </li>
+            <li>
+                If the service goes public, analyze Snowflake usage to
+                optimize warehouse size and session length
+            </li>
+        </ul>
+        <h4>Before Enhancements</h4>
+        <a
+                href="https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf"
+        >
+            https://github.com/collinogren/Inventory-Tracker/tree/02a13405fdedfc145998590c94f4f192f7bfd3cf
+        </a>
+        <p style="margin-top: 12px; margin-bottom: 0">
+            The API is a new program and did not exist prior.
+        </p>
+    </div>
 
-        <footer></footer>
-    </body>
+    <div class="card">
+        <h2>Auto Team Totals</h2>
+        <p>
+            Created in 2023 for use at U.S. Figure Skating competitions, this
+            software provides value in immense time savings for
+            calculating team points at U.S. Figure Skating competitions which
+            previously had to be done manually.
+            It functions by parsing HTML files and placing the results into
+            specific data structures for various algorithms to manipulate
+            and retrieve the results for the competition.
+            This project involved significant consultation with stakeholders
+            in U.S. Figure Skating to fully understand and iron out the
+            requirements.
+        </p>
+        <p>
+            The project demonstrates the implementation of robust and
+            effective data structures and algorithms that solve
+            real-world problems. The use of the Rust programming
+            language demonstrates a commitment to software speed,
+            safety, and security.
+        </p>
+        <p>
+            This project served as a reminder to always assess algorithmic efficiency
+            and to continue to look for ways to optimize and simplify algorithms.
+            Minor challenges included fighting the Rust borrow checker on specific
+            changes that required moving code into separate functions. These were
+            short-lived issues, however.
+        </p>
+        <h4>Achieved course outcomes:</h4>
+        <ul>
+            <li>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science</li>
+            <li>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices</li>
+            <li>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals</li>
+        </ul>
+        <a href="https://github.com/collinogren/AutoTeamTotals"
+        >https://github.com/collinogren/AutoTeamTotals</a
+        >
+        <h4>Enhancements Made</h4>
+        <ul>
+            <li>Improved algorithmic efficiency of core algorithms</li>
+            <li>
+                Added additional business logic as directed by U.S.
+                Figure Skating leadership
+            </li>
+            <li>Improved code readability</li>
+        </ul>
+        <h4>Future Considerations</h4>
+        <ul>
+            <li>
+                Continue code cleanup efforts: the GUI is a monolith
+                that should be split up
+            </li>
+            <li>
+                Implement unit testing to increase confidence in this
+                production application
+            </li>
+            <li>
+                Add the ability to get results from the internet in
+                addition to locally
+            </li>
+        </ul>
+        <h4>Before Enhancements</h4>
+        <a
+                href="https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47"
+        >https://github.com/collinogren/AutoTeamTotals/tree/90975ee852e356b11adddd81f2921ade66df0d47</a
+        >
+    </div>
+</main>
+
+<footer></footer>
+</body>
 </html>
